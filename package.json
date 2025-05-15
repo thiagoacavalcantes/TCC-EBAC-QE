@@ -1,0 +1,24 @@
+{
+  "name": "tcc-ebac-qe",
+  "version": "1.0.0",
+  "description": "Trabalho de conclusão engenheiro de Qualidade de Software - EBAC",
+  "homepage": "https://github.com/thiagoacavalcantes/TCC-EBAC-QE#readme",
+  "bugs": {
+    "url": "https://github.com/thiagoacavalcantes/TCC-EBAC-QE/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thiagoacavalcantes/TCC-EBAC-QE.git"
+  },
+  "license": "ISC",
+  "author": "thiagoacavalcante",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cypress": "^14.3.3"
+  },
+  "devDependencies": {}
+}
