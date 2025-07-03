@@ -5,11 +5,15 @@ on: push
 jobs:
   cypress-run:
     runs-on: ubuntu-22.04
+
     steps:
-      - name: Checkout
+      - name: Checkout do código
         uses: actions/checkout@v3
 
-      - name: Cypress run
+      - name: Instalar dependências
+        run: npm ci
+
+      - name: Rodar Cypress
         uses: cypress-io/github-action@v6
         with:
           start: npx cypress run
