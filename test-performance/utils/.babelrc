@@ -1,0 +1,11 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "useBundled": "usage",
+                "corejs": 3
+            }
+        ]
+    ]
+}
