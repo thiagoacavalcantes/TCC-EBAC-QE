@@ -13,8 +13,6 @@ jobs:
       - name: Instalar dependências
         run: npm ci
 
-      - name: Rodar Cypress
-        uses: cypress-io/github-action@v6
-        with:
-          start: npx cypress run
-          browser: chrome
+      - name: Rodar Cypress direto
+        run: npx cypress run --browser chrome
+
