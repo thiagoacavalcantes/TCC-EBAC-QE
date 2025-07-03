@@ -22,6 +22,6 @@ module.exports = defineConfig({
       runMode: 2,
       openMode: 1,
     },
-    baseUrl: "https://lojaebac.ebaconline.art.br/"
+    baseUrl: "http://lojaebac.ebaconline.art.br/"
   },
 });

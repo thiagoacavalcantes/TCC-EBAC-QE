@@ -1,35 +1,37 @@
+// produto.contract.js
 const Joi = require('joi')
-const joi = require('joi')
 
-const couponsShema = Joi.array().items({
-    id: joi.number(),
-    code: joi.string(),
-    amount: joi.string(),
-    date_created: joi.date(),
-    date_created_gmt: joi.date(),
-    date_modified: joi.date(),
-    date_modified_gmt: joi.string(),
-    date_expires: joi.string().allow(null),
-    date_expires_gmt: joi.string().allow(null),
-    usage_limit: joi.string().allow(null),
-    usage_limit_per_user: joi.string().allow(null),
-    limit_usage_to_x_items: joi.string().allow(null),
-    discount_type: joi.string(),
-    description: joi.string(),
-    usage_count: joi.number(),
-    individual_use: joi.boolean(),
-    product_ids: joi.array(),
-    excluded_product_ids: joi.array(),
-    free_shipping: joi.boolean(),
-    product_categories: joi.array(),
-    excluded_product_categories: joi.array(),
-    exclude_sale_items: joi.boolean(),
-    minimum_amount: joi.string(),
-    maximum_amount: joi.string(),
-    email_restrictions: joi.array(),
-    used_by: joi.array(),
-    meta_data: joi.array(),
-    _links: joi.object()
-})
+const couponsSchema = Joi.array().items(
+  Joi.object({
+    id: Joi.number(),
+    code: Joi.string(),
+    amount: Joi.string(),
+    date_created: Joi.date(),
+    date_created_gmt: Joi.date(),
+    date_modified: Joi.date(),
+    date_modified_gmt: Joi.string(),
+    date_expires: Joi.string().allow(null),
+    date_expires_gmt: Joi.string().allow(null),
+    usage_limit: Joi.string().allow(null),
+    usage_limit_per_user: Joi.string().allow(null),
+    limit_usage_to_x_items: Joi.string().allow(null),
+    discount_type: Joi.string(),
+    description: Joi.string(),
+    usage_count: Joi.number(),
+    individual_use: Joi.boolean(),
+    product_ids: Joi.array(),
+    excluded_product_ids: Joi.array(),
+    free_shipping: Joi.boolean(),
+    product_categories: Joi.array(),
+    excluded_product_categories: Joi.array(),
+    exclude_sale_items: Joi.boolean(),
+    minimum_amount: Joi.string(),
+    maximum_amount: Joi.string(),
+    email_restrictions: Joi.array(),
+    used_by: Joi.array(),
+    meta_data: Joi.array(),
+    _links: Joi.object()
+  })
+)
 
-export default couponsShema;
+module.exports = couponsSchema
