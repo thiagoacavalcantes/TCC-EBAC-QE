@@ -4,7 +4,7 @@ exports.config = {
     framework: 'mocha',
     user: "",
     key: "",
-    app: "bs://ed9a0aba7d2b508f5bc68a3c7ad1808d48cd6ff6",
+    app: "D:\EBAC\Modulo-Final\TCC-EBAC-QE\TCC-EBAC-QE\Mobile\app\android\loja-ebac.apk",
     sync: true,
     deprecationWarnings: true,
     bail: 0,

@@ -5,5 +5,5 @@
     "baseUrl": "./",
     "typeRoots": ["./node_modules/@types"]
   },
-  "include": ["**/*.js"]
+  "include": ["**/*.js", "../cypress.config.js"]
 }
